@@ -1,0 +1,100 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/liberts/Documents/CE1921/scp/simulation/qsim
+Escp
+Z1 w1556807427
+Z2 DPx11 fiftyfivenm 21 fiftyfivenm_atom_pack 0 22 b:4^GQG9SgzacjAmO=9`O0
+Z3 DPx11 fiftyfivenm 22 fiftyfivenm_components 0 22 3g0@koWcWFU4ch:4ZJbzl1
+Z4 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z5 DPx6 altera 11 dffeas_pack 0 22 Dg`GWTC`^Q8GNSMPeo22;3
+Z6 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z7 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z8 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z9 DPx6 altera 28 altera_primitives_components 0 22 _LNC5n6B?5VN@W;M4Dg@k1
+R0
+Z10 8scp.vho
+Z11 Fscp.vho
+l0
+L36
+VkS[Ei=cjn9Bc?miNQ9ON?3
+!s100 QQnZe52]_@A41S2N]7F>k3
+Z12 OV;C;10.5b;63
+32
+!s110 1556807427
+!i10b 1
+Z13 !s108 1556807427.000000
+Z14 !s90 -work|work|scp.vho|
+Z15 !s107 scp.vho|
+!i113 1
+Z16 o-work work
+Z17 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+DEx4 work 3 scp 0 22 kS[Ei=cjn9Bc?miNQ9ON?3
+l3821
+L59
+V3A`20jJedjo``7>zBZjT62
+!s100 U@Ia1CE]egd:JP5<9UfVa1
+R12
+32
+Z18 !s110 1556807428
+!i10b 1
+R13
+R14
+R15
+!i113 1
+R16
+R17
+Escp_vhd_vec_tst
+Z19 w1556807425
+R7
+R8
+R0
+Z20 8Waveform.vwf.vht
+Z21 FWaveform.vwf.vht
+l0
+L31
+VQ=>6FaCOc72BUJHa^^C0>0
+!s100 ]LElbVJ4e:iToBKa<mO<S1
+R12
+32
+R18
+!i10b 1
+Z22 !s108 1556807428.000000
+Z23 !s90 -work|work|Waveform.vwf.vht|
+Z24 !s107 Waveform.vwf.vht|
+!i113 1
+R16
+R17
+Ascp_arch
+R7
+R8
+Z25 DEx4 work 15 scp_vhd_vec_tst 0 22 Q=>6FaCOc72BUJHa^^C0>0
+l76
+L33
+Z26 Vk[c:i2]AhD>2C1Vi66k5?0
+Z27 !s100 @kSeR2:CLW8>iF:N>ziH41
+R12
+32
+R18
+!i10b 1
+R22
+R23
+R24
+!i113 1
+R16
+R17

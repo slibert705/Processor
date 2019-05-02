@@ -1,0 +1,73 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+use ieee.numeric_std.all;
+
+--Entity means schematic block symbol
+entity CONTROLLER is
+port(
+	COND: in std_logic_vector( downto 0);
+	OP: in std_logic_vector( downto 0);
+	FUNCT: in std_logic_vector( downto 0);
+	ROT: in std_logic_vector( downto 0);
+	C,V,N,Z: in std_logic;
+	
+	
+	PCSRC: out std_logic;
+	PCWR: out std_logic;
+	REGDST: out std_logic;
+	REGWR: out std_logic;
+	EXTS: out std_logic_vector(1 downto 0);
+	ALUSRCB: out std_logic;
+	ALUS: out std_logic_vector(2 downto 0);
+	CPSRWR: out std_logic;
+	MEMWR: out std_logic;
+	REGSRC: out std_logic;
+	ROTATE: out std_logic_vector(3 downto 0)
+	
+);
+end entity CONTROLLER;
+
+--circuit description
+architecture DATAFLOW of CONTROLLER is 
+begin
+
+	PCSRC <= '' when COND=2 else
+	'' when others;
+	
+	PCWR <= '' when else
+	'' when others;
+	
+	REGDST <= '' when else
+	'' when others;
+	
+	REGWR <= '' when else
+	'' when others;
+	
+	EXTS <= "" when else
+	"" when others;
+	
+	ALUSRCB <= '' when else
+	'' when others;
+	
+	ALUS <= "" when else
+	"" when others;
+	
+	CPSRWR <= '' when else
+	'' when others;
+	
+	MEMWR <= '' when else
+	'' when others;
+	
+	REGSRC <= '' when else
+	'' when others;
+	
+	ROTATE <= "" when else
+	"" when others;
+	
+	
+	
+	
+	
+
+end architecture;
