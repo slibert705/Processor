@@ -80,6 +80,13 @@ refer to the applicable agreement for further details.
 		(line (pt 0 144)(pt 16 144)(line_width 1))
 	)
 	(port
+		(pt 0 160)
+		(input)
+		(text "MULBIT" (rect 0 0 35 12)(font "Arial" ))
+		(text "MULBIT" (rect 21 155 56 167)(font "Arial" ))
+		(line (pt 0 160)(pt 16 160)(line_width 1))
+	)
+	(port
 		(pt 216 32)
 		(output)
 		(text "PCSRC" (rect 0 0 34 12)(font "Arial" ))
@@ -155,6 +162,13 @@ refer to the applicable agreement for further details.
 		(text "ROTATE[3..0]" (rect 0 0 62 12)(font "Arial" ))
 		(text "ROTATE[3..0]" (rect 133 187 195 199)(font "Arial" ))
 		(line (pt 216 192)(pt 200 192)(line_width 3))
+	)
+	(port
+		(pt 216 208)
+		(output)
+		(text "MULTIPLY" (rect 0 0 48 12)(font "Arial" ))
+		(text "MULTIPLY" (rect 147 203 195 215)(font "Arial" ))
+		(line (pt 216 208)(pt 200 208)(line_width 1))
 	)
 	(drawing
 		(rectangle (rect 16 16 200 224)(line_width 1))

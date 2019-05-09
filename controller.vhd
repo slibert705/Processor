@@ -11,6 +11,7 @@ port(
 	FUNCT: in std_logic_vector(5 downto 0);
 	ROT: in std_logic_vector(3 downto 0);
 	C,V,N,Z: in std_logic;
+	MULBIT: in std_logic;
 	
 	
 	PCSRC: out std_logic;
@@ -23,7 +24,8 @@ port(
 	CPSRWR: out std_logic;
 	MEMWR: out std_logic;
 	REGSRC: out std_logic;
-	ROTATE: out std_logic_vector(3 downto 0)
+	ROTATE: out std_logic_vector(3 downto 0);
+	MULTIPLY: out std_logic
 	
 );
 end entity CONTROLLER;
@@ -48,7 +50,8 @@ begin
 	ALUSRCB <= '1' when (OP=B"00" and FUNCT(5)='0') else --high when register mode
 				  '0';
 	
-	ALUS <= O"1" when OP=B"00" and (FUNCT(4 downto 1)= X"A" or FUNCT(4 downto 1) = X"2") else--CMP or 
+	ALUS <= O"7" when OP=B"00" and MULBIT='1' and FUNCT(5)='0' else
+			  O"1" when OP=B"00" and (FUNCT(4 downto 1)= X"A" or FUNCT(4 downto 1) = X"2") else--CMP or 
 			  O"2" when OP=B"00" and FUNCT(4 downto 1) = X"0" else
 			  O"3" when OP=B"00" and FUNCT(4 downto 1) = X"C" else
 			  O"4" when OP=B"00" and FUNCT(4 downto 1) = X"1" else
@@ -65,6 +68,9 @@ begin
 				 '1';
 	
 	ROTATE <= X"0";
+	
+	MULTIPLY <= '1' when OP = 0 and MULBIT='1' and FUNCT(5)='0' else
+					'0';
 	
 	
 	
