@@ -55,7 +55,7 @@ begin
 			  O"6" when OP=B"00" and FUNCT(4 downto 1) = X"D" else
 			  O"0";
 	
-	CPSRWR <= '1' when OP=B"00" and FUNCT(4 downto 1) = X"A" else
+	CPSRWR <= '1' when OP=B"00" and FUNCT(0) = '1' else
 				 '0';
 	
 	MEMWR <= '1' when OP=1 and FUNCT(0)='0' else
