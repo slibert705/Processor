@@ -6,3 +6,5 @@
 !*.bsf
 !*.vwf
 !.gitignore
+!.qar
+!.qarlog
