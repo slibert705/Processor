@@ -12,6 +12,7 @@ port(
 	ROT: in std_logic_vector(3 downto 0);
 	C,V,N,Z: in std_logic;
 	MULBIT: in std_logic;
+	RM: in std_logic_vector(3 downto 0);
 	
 	
 	PCSRC: out std_logic;
@@ -25,7 +26,9 @@ port(
 	MEMWR: out std_logic;
 	REGSRC: out std_logic;
 	ROTATE: out std_logic_vector(3 downto 0);
-	MULTIPLY: out std_logic
+	MULTIPLY: out std_logic;
+	BLINK: out std_logic;
+	LINK:	out std_logic
 	
 );
 end entity CONTROLLER;
@@ -34,7 +37,7 @@ end entity CONTROLLER;
 architecture DATAFLOW of CONTROLLER is 
 begin
 
-	PCSRC <= '0' when (OP=B"10" and COND=X"E") or (OP=B"10" and COND=X"0" and Z='1') or (OP=B"10" and COND=X"1" and Z='0') else --
+	PCSRC <= '0' when (OP=0 and FUNCT(4 downto 1)=X"D" and RM = X"F") or (OP=B"10" and COND=X"E") or (OP=B"10" and COND=X"0" and Z='1') or (OP=B"10" and COND=X"1" and Z='0') else --
 	'1';
 	
 	PCWR <= '1';
@@ -42,7 +45,7 @@ begin
 	REGDST <= '1' when OP=1 and FUNCT(0)='0' else --when STR
 				 '0';
 	
-	REGWR <= '0' when FUNCT(4 downto 1)=X"A" OR (OP=B"01" and FUNCT(0)='0') OR OP=B"10" else 
+	REGWR <= '0' when FUNCT(4 downto 1)=X"A" OR (OP=B"01" and FUNCT(0)='0') OR (OP=B"10" and FUNCT(4)='0') else 
 				'1';
 	
 	EXTS <= OP;
@@ -69,8 +72,14 @@ begin
 	
 	ROTATE <= X"0";
 	
-	MULTIPLY <= '1' when OP = 0 and MULBIT='1' and FUNCT(5)='0' else
+	MULTIPLY <= '1' when OP=0 and MULBIT='1' and FUNCT(5)='0' else
 					'0';
+					
+	BLINK <= '1' when OP=2 and COND=X"E" and FUNCT(4)='1' else
+				'0';
+				
+	LINK <= '1' when OP=0 and FUNCT(4 downto 1)=X"D" and RM = X"F" else
+			  '0';
 	
 	
 	
