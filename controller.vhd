@@ -23,6 +23,7 @@ port(
 	ALUSRCB: out std_logic;
 	ALUS: out std_logic_vector(2 downto 0);
 	CPSRWR: out std_logic;
+	MEMRD: out std_logic;
 	MEMWR: out std_logic;
 	REGSRC: out std_logic;
 	ROTATE: out std_logic_vector(3 downto 0);
@@ -63,6 +64,9 @@ begin
 	
 	CPSRWR <= '1' when OP=B"00" and FUNCT(0) = '1' else
 				 '0';
+	
+	MEMRD <= '1' when OP=1 and FUNCT(0)='1' else
+				'0';
 	
 	MEMWR <= '1' when OP=1 and FUNCT(0)='0' else
 				'0';
