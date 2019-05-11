@@ -1208,11 +1208,6 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "REGSRC" (rect 1465 200 1505 217)(font "Intel Clear" ))
-	(pt 1448 216)
-	(pt 1496 216)
-)
-(connector
 	(pt 848 184)
 	(pt 864 184)
 	(bus)
@@ -1703,6 +1698,11 @@ refer to the applicable agreement for further details.
 	(pt 864 80)
 	(pt 0 80)
 	(bus)
+)
+(connector
+	(text "REGSRC" (rect 1441 200 1481 217)(font "Intel Clear" ))
+	(pt 1496 216)
+	(pt 1448 216)
 )
 (junction (pt 1176 200))
 (junction (pt 1696 464))

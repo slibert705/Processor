@@ -58,7 +58,8 @@ begin
   -- simulating large memory that does not have reset
   UPDATE: process(CLK,MEMWR)
   begin
-    if rising_edge(CLK) then 
+	if RST='0' then MEMARRAY<=(others=>(others => '0'));
+	elsif rising_edge(CLK) then 
       if MEMWR = '1' then 
          MEMARRAY(to_integer(unsigned(A))) <= WD;
       end if;

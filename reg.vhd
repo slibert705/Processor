@@ -15,9 +15,9 @@ architecture BEHAVIORAL of REG is
 begin
 	MEMORY: process(CLK, RST, LD)--Process means something in time(synchronous)
 	begin 
-		if rising_edge(CLK) then
-			if RST='1' then Q<=(others => '0');
-			elsif LD='1' then Q<=D;
+		if RST='0' then Q<=(others => '0');
+		elsif rising_edge(CLK) then
+			if LD='1' then Q<=D;
 			end if;
 		end if;
 	end process memory;
