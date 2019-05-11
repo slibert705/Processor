@@ -1,0 +1,10 @@
+*.*
+*
+!/**/
+!*.vhd
+!*.bdf
+!*.bsf
+!*.vwf
+!.gitignore
+!*.qar
+!*.qarlog

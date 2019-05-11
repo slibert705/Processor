@@ -76,4 +76,5 @@ set_global_assignment -name BDF_FILE execute.bdf
 set_global_assignment -name VHDL_FILE dmem.vhd
 set_global_assignment -name VHDL_FILE controller.vhd
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
+set_global_assignment -name VHDL_FILE mulmux.vhd
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

@@ -20,9 +20,9 @@ refer to the applicable agreement for further details.
 */
 (header "symbol" (version "1.1"))
 (symbol
-	(rect 16 16 232 256)
+	(rect 16 16 232 288)
 	(text "CONTROLLER" (rect 5 0 74 12)(font "Arial" ))
-	(text "inst" (rect 8 224 20 236)(font "Arial" ))
+	(text "inst" (rect 8 256 20 268)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -78,6 +78,20 @@ refer to the applicable agreement for further details.
 		(text "Z" (rect 0 0 7 12)(font "Arial" ))
 		(text "Z" (rect 21 139 28 151)(font "Arial" ))
 		(line (pt 0 144)(pt 16 144)(line_width 1))
+	)
+	(port
+		(pt 0 160)
+		(input)
+		(text "MULBIT" (rect 0 0 35 12)(font "Arial" ))
+		(text "MULBIT" (rect 21 155 56 167)(font "Arial" ))
+		(line (pt 0 160)(pt 16 160)(line_width 1))
+	)
+	(port
+		(pt 0 176)
+		(input)
+		(text "RM[3..0]" (rect 0 0 36 12)(font "Arial" ))
+		(text "RM[3..0]" (rect 21 171 57 183)(font "Arial" ))
+		(line (pt 0 176)(pt 16 176)(line_width 3))
 	)
 	(port
 		(pt 216 32)
@@ -156,7 +170,28 @@ refer to the applicable agreement for further details.
 		(text "ROTATE[3..0]" (rect 133 187 195 199)(font "Arial" ))
 		(line (pt 216 192)(pt 200 192)(line_width 3))
 	)
+	(port
+		(pt 216 208)
+		(output)
+		(text "MULTIPLY" (rect 0 0 48 12)(font "Arial" ))
+		(text "MULTIPLY" (rect 147 203 195 215)(font "Arial" ))
+		(line (pt 216 208)(pt 200 208)(line_width 1))
+	)
+	(port
+		(pt 216 224)
+		(output)
+		(text "BLINK" (rect 0 0 28 12)(font "Arial" ))
+		(text "BLINK" (rect 167 219 195 231)(font "Arial" ))
+		(line (pt 216 224)(pt 200 224)(line_width 1))
+	)
+	(port
+		(pt 216 240)
+		(output)
+		(text "LINK" (rect 0 0 22 12)(font "Arial" ))
+		(text "LINK" (rect 173 235 195 247)(font "Arial" ))
+		(line (pt 216 240)(pt 200 240)(line_width 1))
+	)
 	(drawing
-		(rectangle (rect 16 16 200 224)(line_width 1))
+		(rectangle (rect 16 16 200 256)(line_width 1))
 	)
 )

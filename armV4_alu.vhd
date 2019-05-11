@@ -18,12 +18,14 @@ end entity armV4_alu;
 architecture BEHAVIORAL of armV4_alu is 
 
 	signal INTA, INTB, INTF: std_logic_vector(32 downto 0);
-
+	signal MULLONG: std_logic_vector(65 downto 0);
 begin
+
+	MULLONG <= INTA*INTB;
 
 	INTA <= '0'&A;
 	INTB <= '0'&B;
-	   F <= INTF(31 downto 0);
+	F    <= INTF(31 downto 0);
 
 	--Flags
 	C <= INTF(32);
@@ -47,7 +49,7 @@ begin
 		 INTA xor INTB when O"4",
 				    INTA when O"5",
 				    INTB when O"6",
-	  '0'&X"00000001" when others;
+	  MULLONG(32 downto 0) when others;
 	
 	
 			
