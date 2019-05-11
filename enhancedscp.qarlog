@@ -1,0 +1,36 @@
+Quartus Prime Archive log --	C:/Users/liberts/Documents/CE1921/scp/enhancedscp.qarlog
+
+Archive:	C:/Users/liberts/Documents/CE1921/scp/enhancedscp.qar
+Date:		Fri May 10 15:08:42 2019
+Quartus Prime		18.0.0 Build 614 04/24/2018 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/liberts/Documents/CE1921/scp/Waveform.vwf
+C:/Users/liberts/Documents/CE1921/scp/adder.vhd
+C:/Users/liberts/Documents/CE1921/scp/armV4_alu.vhd
+C:/Users/liberts/Documents/CE1921/scp/barrel.vhd
+C:/Users/liberts/Documents/CE1921/scp/busmux.vhd
+C:/Users/liberts/Documents/CE1921/scp/busmux4.vhd
+C:/Users/liberts/Documents/CE1921/scp/constant4.vhd
+C:/Users/liberts/Documents/CE1921/scp/constant8.vhd
+C:/Users/liberts/Documents/CE1921/scp/controller.vhd
+C:/Users/liberts/Documents/CE1921/scp/decode.bdf
+C:/Users/liberts/Documents/CE1921/scp/decoder.vhd
+C:/Users/liberts/Documents/CE1921/scp/dmem.vhd
+C:/Users/liberts/Documents/CE1921/scp/execute.bdf
+C:/Users/liberts/Documents/CE1921/scp/extimm.vhd
+C:/Users/liberts/Documents/CE1921/scp/fetch.bdf
+C:/Users/liberts/Documents/CE1921/scp/irom.vhd
+C:/Users/liberts/Documents/CE1921/scp/mulmux.vhd
+C:/Users/liberts/Documents/CE1921/scp/pc.vhd
+C:/Users/liberts/Documents/CE1921/scp/reg.vhd
+C:/Users/liberts/Documents/CE1921/scp/regfile.vhd
+C:/Users/liberts/Documents/CE1921/scp/regsrcbmux.vhd
+C:/Users/liberts/Documents/CE1921/scp/scp.bdf
+C:/Users/liberts/Documents/CE1921/scp/scp.qpf
+C:/Users/liberts/Documents/CE1921/scp/scp.qsf
+c:/intelfpga_lite/18.0/quartus/bin64/assignment_defaults.qdf
+	======= Total: 25 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
